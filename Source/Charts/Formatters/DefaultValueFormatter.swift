@@ -45,7 +45,7 @@ open class DefaultValueFormatter: NSObject, IValueFormatter
             
             if let digits = newValue
             {
-                self.formatter?.minimumFractionDigits = 0
+                self.formatter?.minimumFractionDigits = digits
                 self.formatter?.maximumFractionDigits = digits
                 self.formatter?.usesGroupingSeparator = true
             }
